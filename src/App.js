@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import Rect from "./Rect.js";
 import Memo from "./memo/Memo";
 import AddForm from "./memo/AddForm";
-import FindForm from "./memo/FindForm";
+import FindForm from "./memo/FindForm.js";
 import DelForm from "./memo/DelForm";
 //ファイル
 import './App.css';
