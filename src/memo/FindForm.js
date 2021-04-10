@@ -32,7 +32,7 @@ class FindForm extends Component {
   }
 
   doAction(e) {
-    e.priventDefault();
+    e.preventDefault();
     let action = findMemo(this.state.find);
     this.props.dispatch(action);
   }
@@ -43,7 +43,7 @@ class FindForm extends Component {
         <input type="text" size="10" onChange={this.doChange} value={this.state.message} />
         <input type="submit" style={this.btn} value="Find" />
       </form>
-    )
+    );
   }
 }
 

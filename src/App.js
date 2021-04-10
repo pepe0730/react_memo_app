@@ -3,9 +3,9 @@ import React, { Component } from "react";
 //外部コンポーネント
 import Rect from "./Rect.js";
 import Memo from "./memo/Memo";
-import AddForm from "./memo/AddForm";
+import AddForm from "./memo/AddForm.js";
 import FindForm from "./memo/FindForm.js";
-import DelForm from "./memo/DelForm";
+import DelForm from "./memo/DelForm.js";
 //ファイル
 import './App.css';
 import { connect } from 'react-redux';
@@ -28,8 +28,12 @@ class App extends Component {
         <table>
           <tbody>
             <tr>
-              <td style={td}><FindForm /></td>
-              <td style={td}><DelForm /></td>
+              <td style={this.td}>
+                <FindForm />
+                </td>
+              <td style={this.td}>
+                <DelForm />
+                </td>
             </tr>
           </tbody>
           <Memo />

@@ -28,7 +28,7 @@ class Item extends Component {
 
   render() {
     let d = this.props.value.created;
-    let f = d.getHours(); + ':' + d.getMinutes() + ':' + d.getSeconds();
+    let f = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
     return (
       <tr>
         <th style={this.th}>NO. {this.props.index}</th>
