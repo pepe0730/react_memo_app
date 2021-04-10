@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createStore, combineReducers} from 'redux';
+import {Provider} from 'react-redux';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+//ストア+ストア名の作成
+import MemoStore from './memo/Store'
 
+//表示をレンダリング
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={MemoStore}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
